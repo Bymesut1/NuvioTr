@@ -5,10 +5,10 @@
 
 "use strict";
 
-var PRIMARY_DOMAIN = "https://dizipal2085.com";
+var PRIMARY_DOMAIN = "https://dizipal2135.com";
 var FALLBACK_DOMAINS = [
-"https://dizipal2086.com",
-"https://dizipal2087.com"
+"https://dizipal2136.com",
+"https://dizipal2137.com"
 ];
 
 var TMDB_KEY = "500330721680edb6d5f7f12ba7cd9023";
