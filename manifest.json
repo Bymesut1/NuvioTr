@@ -11,7 +11,7 @@
       "supportedTypes": ["movie", "tv"],
       "filename": "providers/dizipal.js",
       "enabled": true,
-      "logo": "https://www.google.com/s2/favicons?domain=dizipal2085.com&sz=128",
+      "logo": "https://www.google.com/s2/favicons?domain=dizipal2135.com&sz=128",
       "contentLanguage": ["tr"],
       "formats": ["mp4", "m3u8"],
       "limited": false,
