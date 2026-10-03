@@ -7,11 +7,9 @@
 
 var PRIMARY_DOMAIN = "https://dizipal2135.com";
 var FALLBACK_DOMAINS = [
-"https://dizipal2136.com",
-"https://dizipal2137.com"
 ];
 
-var TMDB_KEY = "500330721680edb6d5f7f12ba7cd9023";
+var TMDB_KEY = "000316508321ce461cf81e7c6815eec7";
 var UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36";
 
 var _activeDomain = null;
@@ -27,13 +25,7 @@ return encodeURIComponent(k) + '=' + encodeURIComponent(obj[k]);
 }
 
 function getActiveDomain() {
-if (_activeDomain) return Promise.resolve(_activeDomain);
-return fetch(PRIMARY_DOMAIN + "/", { headers: { "User-Agent": UA } })
-.then(function(r) {
-if (r.ok) { _activeDomain = PRIMARY_DOMAIN; return PRIMARY_DOMAIN; }
-return _tryFallbacks();
-})
-.catch(function() { return _tryFallbacks(); });
+return Promise.resolve(PRIMARY_DOMAIN);
 }
 
 function _tryFallbacks() {
